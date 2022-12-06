@@ -1,0 +1,350 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+
+  font-size: 16px;
+
+  /* colors */
+  --color-primary: #ea5f4d;
+  --color-black-1: #3b413f;
+  --color-secondary: #F0F0F0;
+  --color-white: white;
+
+  /* background color */
+  --nav-bg-color: #fff;
+
+  --shadow-white-1: .5px .5px 10px -5px white;
+  --shadow-white-2: .5px .5px 10px 0px white;
+
+  --shadow-black-1: .5px .5px 10px -10px black;
+  --shadow-black-2: .5px .5px 10px -5px black;
+}
+
+
+/* Globals */
+
+.section {
+  width: 100%;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 10px;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding-block: 20px;
+}
+
+
+/* section 1 */
+/* nav */
+.nav-section {
+  background-color: var(--nav-bg-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-section .logo {
+  font-size: 2rem;
+  color: var(--color-black-1);
+}
+
+.nav-section .logo b {
+  color: var(--color-primary);
+}
+
+.nav-section .menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.nav-section .menu-icon:hover {
+  color: var(--color-primary);
+}
+
+/* presentation section */
+.presentation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+
+}
+
+.presentation-section {
+  background-color: var(--color-secondary);
+}
+
+.presentation img {
+  width: 100%;
+}
+
+.presentation>div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.presentation>div h1 {
+  font-size: 3.5rem;
+  color: var(--color-black-1);
+}
+
+.presentation>div .contact-btn {
+  width: fit-content;
+  padding: 20px 30px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.presentation>div .contact-btn:hover {
+  opacity: .9;
+}
+
+.presentation>div .contact-btn:active {
+  opacity: .8;
+}
+
+
+/* section 2 */
+
+
+.skills-section {
+  background-color: var(--color-primary);
+  padding-block: 40px;
+}
+
+.skills-section .title {
+
+  color: var(--color-white);
+}
+
+.skills-section p {
+  color: var(--color-secondary);
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+  font-size: 1.1rem;
+}
+
+.skills-section .skills {
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.skill {
+  height: 100px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  transition: all .5s;
+  box-shadow: var(--shadow-white-1);
+}
+
+.skill:hover {
+  box-shadow: var(--shadow-white-2);
+  scale: 1.05;
+}
+
+/* projects section  */
+/* section 3 */
+
+
+.projects-section {
+  background-color: var(--color-secondary);
+  padding-block: 40px;
+}
+
+.projects-section .title {
+  color: var(--color-black-1);
+}
+
+.projects-section p {
+  /* color: var(--color-secondary); */
+  text-align: center;
+  max-width: 600px;
+  margin-inline: auto;
+  font-size: 1.1rem;
+}
+
+.projects-section .projects {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.project {
+  background-color: white;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-black-1);
+  transition: all .5s;
+}
+
+
+.project:hover {
+  scale: 1.02;
+  box-shadow: var(--shadow-black-2);
+}
+
+
+/* contact section [section 4] */
+.contact-section {
+  padding-block: 40px;
+  background-color: var(--color-black-1);
+}
+
+/* contact container [not general container] */
+.contact-section .container>div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  overflow: hidden;
+  /* glace effect */
+  /* From https://css.glass */
+  /* background: var(--color-primary);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
+  border: 1px solid var(--color-primary); */
+}
+
+/* left side */
+
+.contact-section .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+.contact-section .left-side h1 {
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+}
+
+.contact-section .left-side .personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-section .left-side .personal-info>div {
+  display: flex;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+}
+
+
+
+
+/* form right side */
+
+.contact-section form {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-secondary);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-section form .title {
+  color: var(--color-black-1);
+  padding-bottom: 0px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.contact-section form p {
+  position: relative;
+  top: -10px;
+
+}
+
+.contact-section form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.contact-section form .input-group label {
+  color: var(--color-primary);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.contact-section form .input-group input,
+.contact-section form .input-group textarea {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 0px;
+}
+
+.contact-section form .input-group textarea:focus,
+.contact-section form .input-group input:focus {
+  border-color: var(--color-primary);
+}
+
+.contact-section form button {
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0px;
+  width: fit-content;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  opacity: .9;
+}
+
+
+
+/* footer section */
+.footer-section {
+  padding-block: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
