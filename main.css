@@ -28,6 +28,8 @@
   --color-dark-6: #a1aad3;
   --color-dark-7: #c0cdff;
   --color-dark-8: #dee4ff;
+  --color-dark-9: #f0f3ff;
+  --color-dark-10: #f9faff;
 
 
 
@@ -189,6 +191,11 @@ nav {
   flex: 2;
 }
 
+.skills-section .img>img {
+  width: 100%;
+  opacity: .7;
+}
+
 .skills-section .skills {
   flex: 3;
   padding: 20px 0;
@@ -253,26 +260,6 @@ nav {
   font-size: 1.1rem; 
 }*/
 
-.projects-section .projects {
-  padding: 40px 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-}
-
-.project {
-  background-color: var(--color-dark-8);
-  height: 200px;
-  border-radius: 5px;
-  box-shadow: var(--shadow-black-1);
-  transition: all .5s;
-}
-
-
-.project:hover {
-  scale: 1.02;
-  box-shadow: var(--shadow-black-2);
-}
 
 
 /* contact section [section 4] */
@@ -328,7 +315,7 @@ nav {
 .contact-section form {
   width: 100%;
   max-width: 500px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-dark-4);
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -336,13 +323,14 @@ nav {
 }
 
 .contact-section form .title {
-  color: var(--color-black-1);
+  color: var(--color-dark-9);
   padding-bottom: 0px;
   text-align: left;
   font-size: 2rem;
 }
 
 .contact-section form p {
+  color: var(--color-dark-10);
   position: relative;
   top: -10px;
 
@@ -356,30 +344,31 @@ nav {
 }
 
 .contact-section form .input-group label {
-  color: var(--color-primary);
+  color: var(--color-dark-9);
   text-transform: capitalize;
   font-weight: 500;
 }
 
 .contact-section form .input-group input,
 .contact-section form .input-group textarea {
+  background-color: #ddd;
   padding: 5px 10px;
   font-size: 1.1rem;
   outline: none;
   border: 1px solid grey;
-  border-radius: 0px;
+  border-radius: 3px;
 }
 
 .contact-section form .input-group textarea:focus,
 .contact-section form .input-group input:focus {
-  border-color: var(--color-primary);
+  border-color: var(--color-dark-10);
 }
 
 .contact-section form button {
   padding: 5px 20px;
   font-size: 1.1rem;
   border: none;
-  border-radius: 0px;
+  border-radius: 3px;
   width: fit-content;
   background-color: var(--color-primary);
   color: var(--color-white);

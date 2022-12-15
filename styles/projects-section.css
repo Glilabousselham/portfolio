@@ -1,0 +1,118 @@
+.projects-section .projects {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 767px) {
+  .projects-section .projects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.project {
+  background-color: var(--color-dark-8);
+  min-height: 150px;
+  border-radius: 5px;
+  box-shadow: var(--shadow-black-1);
+  transition: all .2s;
+  display: flex;
+  align-items: stretch;
+  padding: 10px;
+  gap: 10px;
+}
+
+.project:hover {
+  scale: 1.02;
+  box-shadow: var(--shadow-black-2);
+}
+
+.project img {
+  object-fit: contain;
+  background-color: var(--color-dark-1);
+  border-radius: 5px;
+  height: 120px;
+  width: 180px;
+}
+
+.project .left {
+  /* height: 100%;/ */
+}
+
+.project .left .control {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: inherit;
+}
+
+.project .left .control .btn {
+  background-color: var(--color-dark-2);
+  color: var(--color-dark-10);
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.project .right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project .p-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--color-dark-2);
+}
+
+.project .p-description {
+  color: var(--color-dark-3);
+}
+
+.project .btns {
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.project .btns .btn {
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-dark-1);
+  color: var(--color-dark-8);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.project .btns button:hover {
+  background-color: var(--color-dark-3);
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* .projects {
+    grid-template-columns: minmax(0, 1fr);
+  } */
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Tic Tac Toe",
+        "description": "simple game which never lost",
+        "link": "https://glilabousselham.github.io/game-xo/",
+        "images": [
+            "/assets/projects-images/xo-1.png",
+            "/assets/projects-images/xo-2.png",
+            "/assets/projects-images/xo-3.png"
+        ]
+    }
+]
